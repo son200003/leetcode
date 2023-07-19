@@ -1,0 +1,21 @@
+class Solution {
+    public boolean isPalindrome(int x) {
+        String l = String.valueOf(x);
+       String r = new StringBuffer(l).
+      reverse().toString();
+ 
+     if (x<0 || (x!=0 && x%10==0)) return false;
+
+        // for(int i=0; i < l.length() ; i++ ){
+        //     for(int j=0; j< r.length() ; j++ ){
+        //         if(l.charAt(i) != r.charAt(j)) return false;
+        //     }
+        // }
+
+         for (int i = 0; i < l.length(); i++) {
+            if (l.charAt(i) != r.charAt(i)) return false;
+        }
+
+        return true;
+    }
+}
