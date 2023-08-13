@@ -1,0 +1,14 @@
+class Solution {
+    public String addBinary(String a, String b) {
+    
+        int decimalValueA = Integer.parseInt(a, 2);
+        int decimalValueB = Integer.parseInt(b, 2);
+
+        int sum  = decimalValueA + decimalValueB;
+        String binaryString = Integer.toBinaryString(sum);
+        return binaryString; 
+    }
+}
+
+// bài này không submit được vì không sử lý được giá trị quá lớn 
+// BigInteger thì nó không có
